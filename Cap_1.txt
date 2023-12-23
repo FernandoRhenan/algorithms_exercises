@@ -1,0 +1,15 @@
+1.1-1: (1) Cite um exemplo real que exija ordenação ou (2) um exemplo real que exija o cálculo de uma envoltória convexa.
+R: (1) Filtros de preço de produtos em um e-commerce.
+   (2) O primeiro passo para descobrir a área de plano com pelo menos três pontos definidos é preciso ligar os vértices de forma envolta e convexa.
+
+1.1-2: Além da velocidade, que outras medidas de eficiência poderiam ser usadas em uma configuração real?
+R:  Utilização de recursos computacionais e otimização do algorítmo.
+
+1.1-3: Selecione uma estrutura de dados que você já tenha visto antes e discuta seus pontos fortes e suas limitações.
+R: A fila é uma estrutura de dados que funciona muito bem para alguns casos específicos, pode ser usada por exemplo para fazer uma fila de preços de fechamento de um ativo do mercado financeiro. Com essa fila, poderia ser possível montar indicadores como o de média móvel. Onde cada fechamento de preço seria adicionado no final da fila e o primeiro preço da fila seria removido, mantendo a fila com tamanho limitado para representar os períodos de cada fechamento. As limitações aparecem quando é preciso fazer uma remoção a um valor intermediário ou último valor da fila, já que não seria possível.  
+
+1.1-4: Em que aspecto os problemas anteriores do caminho mais curto e do caixeiro-viajante são semelhantes? Em que aspectos eles são diferentes?
+R: Se tratando de eficiência, o problema é o mesmo: É um problema não-determinístico polinomial, então quanto mais caminhos são possíveis de percorrer, mais tempo demoraria para calcular a rota mais eficiente.
+
+1.1-5: Mostre um problema real no qual apenas a melhor solução servirá. Em seguida, apresente um problema em que baste uma solução que seja "aproximadamente" a melhor.
+R:
