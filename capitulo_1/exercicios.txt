@@ -14,3 +14,9 @@ R: Se tratando de eficiência, o problema do caixeiro-viajante é um problema n�
 1.1-5: (1) Mostre um problema real no qual apenas a melhor solução servirá. (2) Em seguida, apresente um problema em que baste uma solução que seja "aproximadamente" a melhor.
 R: (1) O problema de uma ocorrência policial, de bombeiro ou ambulância, onde as viaturas devem chegar ao local de forma precisa e eficaz, onde não deve haver espaço para erros.
    (2) Um problema logístico onde se deve otimizar o espaço dentro de uma embalagem de um produto vendido em um e-comerce, onde quanto mais otimizado, mais protegido, menos custoso, melhor.
+
+1.2-1: Cite um exemplo de aplicação que exige conteúdo algorítimico no nível da aplicação e discuta a função dos algoritmos envolvidos.
+
+1.2-2: Suponha que estamos comparando implementações de ordenação por inserção e ordenação por intercalação na mesma máquina. Para entradas de tamnho n, a ordenação por inserção é executada em 8n**2 passos, enquanto a ordenação por intercalação é executada em 64n lg n passos. Para quais valores de n a ordenação por inserção supera a ordenação por intercalação?
+
+1.2-3: Qual é o menor valor de n tal que um algoritmo cujo tempo de execução é 100n**2 funciona mais rapidamente que um algoritmo cujo tempo de execução é 2**n na mesma máquina?
