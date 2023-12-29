@@ -16,7 +16,8 @@ R: (1) O problema de uma ocorrência policial, de bombeiro ou ambulância, onde 
    (2) Um problema logístico onde se deve otimizar o espaço dentro de uma embalagem de um produto vendido em um e-comerce, onde quanto mais otimizado, mais protegido, menos custoso, melhor.
 
 1.2-1: Cite um exemplo de aplicação que exige conteúdo algorítimico no nível da aplicação e discuta a função dos algoritmos envolvidos.
+R: Uma aplicação de busca de dados de cidades em uma grande base de dados. Para buscar os dados de uma determinada cidade com base em filtros, é preciso um algoritmo bem feito e otimizado para ter um bom desempenho. Um exemplo é os algoritmos de um SGBD (Sistema de Gerenciamento de Banco de Dados).
 
-1.2-2: Suponha que estamos comparando implementações de ordenação por inserção e ordenação por intercalação na mesma máquina. Para entradas de tamnho n, a ordenação por inserção é executada em 8n**2 passos, enquanto a ordenação por intercalação é executada em 64n lg n passos. Para quais valores de n a ordenação por inserção supera a ordenação por intercalação?
+1.2-2: Suponha que estamos comparando implementações de ordenação por inserção e ordenação por intercalação na mesma máquina. Para entradas de tamanho n, a ordenação por inserção é executada em 8n**2 passos, enquanto a ordenação por intercalação é executada em 64n lg n passos. Para quais valores de n a ordenação por inserção supera a ordenação por intercalação?
 
 1.2-3: Qual é o menor valor de n tal que um algoritmo cujo tempo de execução é 100n**2 funciona mais rapidamente que um algoritmo cujo tempo de execução é 2**n na mesma máquina?
