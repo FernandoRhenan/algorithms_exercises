@@ -22,3 +22,4 @@ R: Uma aplicação de busca de dados de cidades em uma grande base de dados. Par
 R: Para os valores de 1 a 43, além de 43 a ordenação por inserção se torna mais lenta que a ordenação por intercalação.
 
 1.2-3: Qual é o menor valor de n tal que um algoritmo cujo tempo de execução é 100n**2 funciona mais rapidamente que um algoritmo cujo tempo de execução é 2**n na mesma máquina?
+R: O menor valor de n para que 100n**2 funcione mais rapidamente que 2**n deve ser 15.
