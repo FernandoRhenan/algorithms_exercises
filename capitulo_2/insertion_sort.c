@@ -1,10 +1,11 @@
 #include <stdio.h>
 
+// Código que implementa a ordenação por inserção na prática.
+
 int main()
 {
     int numbers[10] = {4, 1, 2, 9, 5, 0, 3, 6, 8, 7};
-    int j;
-    int i;
+    int j, i;
 
     for (j = 1; j < sizeof numbers / 4; j++)
     {

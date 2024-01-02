@@ -1,0 +1,7 @@
+2.1-1: Usando a figura 2.2 como modelo, ilustre a operação de insertion-sort no arranjo A = {31, 41, 59, 26, 41, 48};
+2.1-2: Reescreva o procedimento insertion-sort para ordenar em ordem não crescente, em vez de ordem não decrescente.
+2.1-3: Entrada: Uma sequência de números A = {a1, a2, …, an} e um valor v .
+Saída: Um índice i tal que v = A[i] ou o valor especial NIL, se v não aparecer em A.
+
+Escreva um pseudocódigo para busca linear, que faça a varredura da sequência, procurando por v. Usando um invariante de laço, prove que seu algoritmo é correto. Certifique-se que seu invariante de laço satisfaz as três propriedades necessárias.
+2.1-4: Considere o problema de somar dois inteiros binários de n bits, armazenados em dois arranjos de n elementos A e B. A soma dos dois inteiros deve ser armazenada em forma binária em um arranjo de (n+1) elementos C. Enuncie o problema formalmente e escreva o pseudocódigo para somar os dois inteiros.
