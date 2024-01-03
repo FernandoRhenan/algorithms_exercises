@@ -47,8 +47,8 @@ Neste exemplo de pseudocódigo, a invariante de laço é a variável index que p
 Esse algorítmo funciona pois para todas as entradas ele verifica se a entrada é igual ao elemento procurado. Se não for ele parte para a próxima entrada e repete o processo até chegar no comprimento máximo do arranjo, após isso, se não encontrar o valor de v dentro do arranjo, é retornado o valor NIL. Se encontrar o valor de v dentro do arranjo, então esse valor é retornado.
 
 2.1-4: Considere o problema de somar dois inteiros binários de n bits, armazenados em dois arranjos de n elementos A e B. A soma dos dois inteiros deve ser armazenada em forma binária em um arranjo de (n+1) elementos C. Enuncie o problema formalmente e escreva o pseudocódigo para somar os dois inteiros. 
-R:
-  int A[4] = {1, 0, 0, 1};
+R: A resposta foi elaborada em C;
+    int A[4] = {1, 0, 0, 1};
     int B[4] = {0, 0, 1, 1};
     int C[5] = {0, 0, 0, 0, 0};
 
