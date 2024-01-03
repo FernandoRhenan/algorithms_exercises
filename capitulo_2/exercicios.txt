@@ -1,7 +1,63 @@
 2.1-1: Usando a figura 2.2 como modelo, ilustre a operação de insertion-sort no arranjo A = {31, 41, 59, 26, 41, 48};
+R: 31 < 41
+   31 < 41 < 59
+   31 < 41 < 59 > 26 -> 31 < 41 > 26 < 59 -> 31 > 26 < 41 < 59 -> 26 < 31 < 41 < 59
+   26 < 31 < 41 < 59 > 41 -> 26 < 31 < 41 <= 41 < 59
+   26 < 31 < 41 <= 41 < 59 > 48 -> 26 < 31 < 41 <= 41 < 48 < 59
+   
 2.1-2: Reescreva o procedimento insertion-sort para ordenar em ordem não crescente, em vez de ordem não decrescente.
-2.1-3: Entrada: Uma sequência de números A = {a1, a2, …, an} e um valor v .
+R: Solução em C:
+#include <stdio.h>
+int main()
+{
+    int numbers[10] = {4, 1, 2, 9, 5, 0, 3, 6, 8, 7};
+    int j, i;
+    for (j = 1; j < sizeof numbers / 4; j++)
+    {
+        int key = numbers[j];
+        i = j - 1;
+        while (i >= 0 && numbers[i] > key)
+        {
+            numbers[i + 1] = numbers[i];
+            i = i - 1;
+        }
+        numbers[i + 1] = key;
+    }
+    return 0;
+}
+
+2.1-3: Entrada: Uma sequência de números A = {a1, a2, …, an} e um valor v.
 Saída: Um índice i tal que v = A[i] ou o valor especial NIL, se v não aparecer em A.
 
 Escreva um pseudocódigo para busca linear, que faça a varredura da sequência, procurando por v. Usando um invariante de laço, prove que seu algoritmo é correto. Certifique-se que seu invariante de laço satisfaz as três propriedades necessárias.
-2.1-4: Considere o problema de somar dois inteiros binários de n bits, armazenados em dois arranjos de n elementos A e B. A soma dos dois inteiros deve ser armazenada em forma binária em um arranjo de (n+1) elementos C. Enuncie o problema formalmente e escreva o pseudocódigo para somar os dois inteiros.
+R:
+
+A = {1, 2, 3, 4, 5, 6, 7}
+v = 2
+
+length = A.length - 1
+
+for(index = 0 to length)
+    if(A[index] == v)
+        return i
+
+return NIL
+
+Neste exemplo de pseudocódigo, a invariante de laço é a variável index que percorre todo o arranjo até chegar no último elemento, que é representado por length.
+Esse algorítmo funciona pois para todas as entradas ele verifica se a entrada é igual ao elemento procurado. Se não for ele parte para a próxima entrada e repete o processo até chegar no comprimento máximo do arranjo, após isso, se não encontrar o valor de v dentro do arranjo, é retornado o valor NIL. Se encontrar o valor de v dentro do arranjo, então esse valor é retornado.
+
+2.1-4: Considere o problema de somar dois inteiros binários de n bits, armazenados em dois arranjos de n elementos A e B. A soma dos dois inteiros deve ser armazenada em forma binária em um arranjo de (n+1) elementos C. Enuncie o problema formalmente e escreva o pseudocódigo para somar os dois inteiros. 
+R:
+  int A[4] = {1, 0, 0, 1};
+    int B[4] = {0, 0, 1, 1};
+    int C[5] = {0, 0, 0, 0, 0};
+
+    int surplus = 0;
+    for (int i = (sizeof A / 4) - 1; i >= 0; i--)
+    {
+        int sum = A[i] + B[i] + C[i + 1];
+        surplus = sum % 2;
+        C[i + 1] = surplus;
+        C[i] = sum / 2;
+    }
+
