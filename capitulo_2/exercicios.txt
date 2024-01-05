@@ -61,3 +61,7 @@ R: A resposta foi elaborada em C;
         C[i] = sum / 2;
     }
 
+2.2-1: Expresse a função n³/100 – 100n² + 3 em termos de notação Θ.
+R: Theta de n**3 ou também pode ser represendado por Θ(n³). Isso por que n³ é o valor maior valor linear, o que exclui a relevancia de 100, 100n² e 3 para valores de n suficientemente grandes.
+
+2.2-2: Considere a ordenação de n números armazenados no arranjo A, localizando primeiro o menor elemento de A e permutando esse elemento com o elemento contido em A[1]. Em seguida, determine o segundo menor elemento de A e permute-o com A[2]. Continue dessa maneira para os primeiros n-1 elementos de A. Escreva o pseudocódigo para esse algoritmo, conhecido como ordenação por seleção. Qual invariante de laço esse algoritmo mantém? Por que ele só precisa ser executado para os primeiros n-1 elementos, e não para todos os n elementos? Forneça os tempos de execução do melhor caso e do pior caso da ordenação por seleção em notação Θ.
